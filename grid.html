@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  html, body{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    
+  }
+  .item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: cyan;
+    
+  }
+
+  
+
+ 
+
+  .item3{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: blueviolet;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+  .item3-1{
+    background-color: rgb(220, 220, 220);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 1%;
+    
+    border-radius: 15px;
+    border: 5px;
+
+
+  }
+  .item3-2{
+    background-color: rgb(249, 249, 249);
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding-top: 4%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+  .item3-3{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-top: 1%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+
+  .item4{
+    background-color: crimson;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 11;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    display: grid;
+  }
+  .item4-1{
+    background-color: rgb(220, 220, 220);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 5%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+
+  .item5{
+    background-color: darkred;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 11;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    display: grid;
+  }
+  .item5-1{
+    background-color: rgb(172, 172, 173);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 1.5%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+  .item5-2{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-top: 5%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+
+  .item6{
+    background-color: red;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+   
+  }
+
+  .item6-1{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 3%;
+
+    border-radius: 15px;
+    border: 5px;
+
+  }
+
+  .item2{
+    grid-row-start: 7;
+    grid-row-end: 11;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:   1fr;
+    display: grid;
+  }
+  .item2-1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 4px solid black;
+    background-color: rgb(248, 248, 0);
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .item2-1-1{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 1.5%;
+
+    border-radius: 15px;
+    border: 5px;  
+
+  }
+
+  .item2-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: green;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    
+  }
+
+  .item2-2-1{
+    background-color: rgb(255, 255, 255);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    
+    border-radius: 15px;
+    border: 5px;
+    padding-top: 2%;
+
+
+  }
+
+  .item7{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: chartreuse;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .item7-1{
+    background-color: rgb(255, 255, 255);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    
+    border-radius: 15px;
+    border: 5px;
+    padding-top: 2%;
+
+  }
+  .item7-2{
+    background-color: rgb(185, 185, 185);
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    border-radius: 15px;
+    border: 5px;
+    padding-top: 7%;
+
+  }
+  
+  .gridcontainer{
+    width: 100%;
+    height: 100%;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    
+
+  }
+  .gridcontainer > div {
+   border-top: 4px solid black;
+   border-right: 4px solid black;
+    border-width: 4px;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 1.5vh;
+    
+  }
+
+  .item2 > div {
+   text-align: center;
+    
+  }
+
+</style>
+
+<body>
+  <div class="gridcontainer">
+  <div class="item2">
+    <div class="item2-1">
+      <div class="item2-1-1">
+        ni kan hamna i nya förutsedda situationer! kommer ni att klara av förändringarna som väntar er?
+      </div>
+    </div>
+    <div class="item2-2">
+      <div class="item2-2-1">
+        tänk om det är elementen som ... sätter oss på prov!
+      </div>
+    </div>
+  </div>
+
+  <div class="item3">
+    <div class="item3-1">
+      och när händer allt det här?
+    </div>
+    <div class="item3-2">
+      menar du när oraklet kallade oss senast och det där knäppa påhittet med de omvandlande korten?
+    </div>
+    <div class="item3-3">
+      förvandlade,
+      irma!
+    </div>
+    
+  </div>
+  <div class="item4">
+    <div class="item4-1">
+        korten ger röst åt elementen talar inte så ofta men när de gör det betyder det att en stor förändring är på väg!
+    </div>
+  </div>
+  <div class="item5">
+    <div class="item5-1">
+      just det! och minns ni vad oraklet sa om de?
+    </div>
+    <div class="item5-2">
+      umpf! samma gamla vanliga katastofiska flintis!
+    </div>
+  </div>
+  <div class="item6">
+    <div class="item6-1">
+      tänk själva... våra krafter avslöjar sej plötsligt på de mest ovanliga och oväntade sätt! vi upptäcker att vi klarar av att göra sånt som vi trodde var omöjligt...
+    </div>
+  </div>
+  <div class="item7">
+    <div class="item7-1">
+      det är inget att skömta om,tjejer! här håller på att hända nåt jättekonstigt!
+    </div>
+    <div class="item7-2">
+      jag kan slå vad om att det finns en mening med det här!
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+</body>
+</html>
